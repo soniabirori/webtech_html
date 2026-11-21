@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Scent Stories for fragrance recommendations, questions, and a little scent inspiration.">
+    <title>Contact | Scent Stories</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Scent Stories home"><span class="wordmark-icon" aria-hidden="true">S</span><span>Scent <span class="wordmark-light">Stories</span></span></a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our story</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="server-time.php">Server time</a></li>
+            </ul>
+        </nav>
+        <a class="header-cta" href="index.html#collection">Explore scents <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero page-hero-compact">
+            <p class="eyebrow"><span class="eyebrow-line"></span>We'd love to hear from you</p>
+            <h1>Let's find your<br><em>next favourite.</em></h1>
+            <p>Tell us what you love, ask us a question, or just say hello. Every good story starts somewhere.</p>
+        </section>
+        <section class="contact-layout section-wrap">
+            <div class="contact-details">
+                <p class="eyebrow">Get in touch</p>
+                <h2>A little note<br>goes a <em>long way.</em></h2>
+                <p>Looking for a scent that feels like you? Share a few notes about what you enjoy and we'll point you in the right direction.</p>
+                <address>
+                    <p class="contact-label">Find us</p>
+                    <p>Kigali, Rwanda</p>
+                    <p class="contact-label">Write to us</p>
+                    <p><a href="mailto:hello@scentstories.com">hello@scentstories.com</a></p>
+                </address>
+                <p class="contact-aside">Good things take a little time. We'll be in touch soon.</p>
+            </div>
+            <section class="contact-form-card" aria-labelledby="form-title">
+                <p class="eyebrow">Send a message</p>
+                <h2 id="form-title">What's on your mind?</h2>
+                <form id="contactForm" action="#" method="post" novalidate>
+                    <div class="form-field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" placeholder="How should we address you?" required minlength="2" maxlength="80" aria-describedby="nameError">
+                        <p class="field-error" id="nameError" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" aria-describedby="emailError">
+                        <p class="field-error" id="emailError" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What can we help with?" required minlength="3" maxlength="120" aria-describedby="subjectError">
+                        <p class="field-error" id="subjectError" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us a little about what you're looking for..." required minlength="10" maxlength="2000" aria-describedby="messageError"></textarea>
+                        <p class="field-error" id="messageError" aria-live="polite"></p>
+                    </div>
+                    <button class="button" type="submit">Send your message <span aria-hidden="true">→</span></button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="wordmark footer-wordmark" href="index.html"><span class="wordmark-icon" aria-hidden="true">S</span><span>Scent <span class="wordmark-light">Stories</span></span></a>
+        <p>Small moments. Lasting notes.</p>
+        <nav aria-label="Footer navigation"><a href="about.html">Our story</a><a href="contact.html">Contact</a><a href="server-time.php">Server time</a></nav>
+        <small>&copy; 2026 Scent Stories. Made with care.</small>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
